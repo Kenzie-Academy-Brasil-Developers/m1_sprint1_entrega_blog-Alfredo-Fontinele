@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;800&family=Montserrat:wght@100;300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    padding: 0 0 100px 0;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    padding: 0px 0px 0px 30px;
+}
+
+.header_left,
+.header_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.header_left img {
+    height: 35px;
+    width: 140px;
+}
+
+.header_right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px;
+}
+
+.header_right li {
+    list-style-type: none;
+    text-align: center;
+    padding: 0 13px;
+}
+
+.header_right a {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(44, 42, 42);
+}
+
+.header_right a:hover {
+    border-bottom: 2px solid slateblue;
+    padding-bottom: 10px;
+}
+
+.header_right button {
+    background-color: blue;
+    border-radius: 10px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.header_right button:hover {
+    background-color: springgreen;   
+    transform: scale(1.04);
+}
+
+.quero_ser_programador {
+    height: 100px;
+    width: 310px;
+    max-width: 430px;
+    background-color: blue;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.quero_ser_programador:hover {
+    background-color: rgb(38, 38, 236);
+}
+
+.quero_ser_programador a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 80px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.quero_ser_programador svg {
+    margin: 0 0 0 10px;
+}
+
+.menu_mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_mobile div {
+    border-radius: 10px;
+    height: 6px;
+    width: 50px;
+    background-color: blue;
+    margin: 0 0 7px 0;
+}
+
+.main_title {
+    background-color: rgba(20,30,40, 0.7);
+}
+
+.main_title h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin: 0 0 30px 0;
+}
+
+.main1, 
+.main2 {
+    padding: 100px 0 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 1s;
+    width: 100%;
+}
+
+.main1 {
+    background-image: url("https://pbs.twimg.com/media/EPXgek_X0AAQisu.jpg");
+    background-position: center;
+}
+
+.main2 {
+    background-image: url("https://exame.com/wp-content/uploads/2021/03/Daniel-Kriger-CEO-e-Ugo-Roveda-COO_2.jpg");
+    background-position: top;
+}
+
+.section_post,
+.section_article {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_post {
+    padding: 100px 50px;
+    border-radius: 20px;
+}
+
+.section_article .post {
+    background-color: rgba(20,30,40,0.7);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 450px;
+    width: auto;
+    height: 550px;
+    margin: 20px 30px;
+    transition: all 0.5s;
+}
+
+.section_article .post:hover {
+    transform: scale(1.01);
+    box-shadow: 5px 5px 7px black;
+    background-color: rgb(20,30,40);
+}
+
+.section_article .post .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    padding: 40px 30px;
+}
+
+.section_article .post .links:hover {
+    color: #337DDF;
+}
+
+.section_article .post img {
+    border-radius: 10px;
+    align-self: center;
+    margin: auto;
+    height: 190px;
+}
+
+.section_article .post h2 {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.section_article .post p {
+    font-weight: bold;
+    padding: 20px 0 0 0;
+}
+
+.section_news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 650px;
+    background-image: url("https://kenzie.com.br/blog/wp-content/uploads/2020/11/kenzie_blog_componentizacao-react.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section_news_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_news_text img {
+    width: 100px;
+    height: 100px;
+    margin: 40px 0;
+    border: 4px solid #FFF;
+}
+
+.section_news_text h1, 
+.section_news_text h2 {
+    color: #FFF;
+    font-style: italic;
+}
+
+.section_news h3 {
+    padding: 10px 0;
+    color: #FFF;
+}
+
+.section_news form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    width: calc(100% - 100px);
+    margin: 40px 0 0 0;
+    padding: 20px 0;
+    background-color: rgba(42, 42, 187, 0.5);  /*rgb(61, 80, 187)*/
+    border-radius: 50px;
+}
+
+.section_news .form_div {
+    height: 150px;
+}
+
+.section_news .form_div input[type="email"],
+.section_news .form_div input[type="submit"] {
+    padding: 10px;
+}
+
+.section_news .form_div input[type="email"] {
+    margin: 20px 0 0 0;
+    width: 300px;
+    transition: all 0.5s;
+}
+
+.section_news .form_div input[type="email"]:hover {
+    transform: scale(1.01);
+}
+
+.section_news .form_div input[type="submit"] {
+    width: 250px;
+    margin: 30px 0 0 0;
+    background-color: #11d86a;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.section_news .form_div input[type="submit"]:hover {
+    background-color: springgreen;
+    transform: scale(1.01);
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .header {
+        padding: 0px 30px;
+    }
+
+    .quero_ser_programador {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .menu_mobile {
+        display: flex;
+    }
+
+    .header_right {
+        position: absolute;
+        background-color: rgba(20,30,40, 0.9);
+        left: -100%;
+        top: 100px;
+        width: 100%;
+        height: calc(100vh - 100px);
+        transition: all 200ms;
+    }
+
+    .header_right.active {
+        left: 0;
+    }
+
+    .header_right ul {
+        flex-direction: column;
+    }
+
+    .header_right li {
+        padding: 20px 0;
+    }
+
+    .header_right a {
+        font-weight: bold;
+        font-size: 20px;
+        color: #FFF;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .section_post {
+        padding: 100px 30px;
+        border-radius: 20px;
+    }
+
+    .section_article .post {
+        background-color: rgba(20,30,40,0.7);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 450px;
+        height: 400px;
+        margin: 20px 0px;
+    }
+
+    .section_article .post img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .section_article .post h2 {
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+    .section_article .post p {
+        font-size: 12px;
+    }
+
+    .section_news_text h1,
+    .section_news_text h2 {
+        font-size: 1em;
+        margin: 0 30px;
+    }
+    
+    .section_news .form_div input[type="email"] {
+        width: calc(100% - 50px);
+        border-radius: 20px;
+    }
+    
+    .section_news .form_div input[type="submit"] {
+        width: calc(100% - 50px);
+        height: auto;
+        border-radius: 20px;
+    }
+
+}
