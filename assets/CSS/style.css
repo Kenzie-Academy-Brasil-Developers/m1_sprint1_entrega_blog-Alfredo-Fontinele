@@ -199,7 +199,7 @@ body {
     flex-direction: column;
     justify-content: center;
     color: #FFF;
-    padding: 40px 30px;
+    padding: 100px 30px;
 }
 
 .section_article .post .links:hover {
@@ -282,26 +282,6 @@ body {
 .section_news .form_div {
     height: 150px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .section_news .form_div input[type="email"],
 .section_news .form_div button {
