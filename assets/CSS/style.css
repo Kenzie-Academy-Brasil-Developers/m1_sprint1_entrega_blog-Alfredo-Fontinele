@@ -106,7 +106,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
-    color: white;
+    color: #FFF;
 }
 
 .quero_ser_programador svg {
@@ -136,7 +136,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: #FFF;
     padding: 20px;
     margin: 0 0 30px 0;
 }
@@ -190,7 +190,7 @@ body {
 
 .section_article .post:hover {
     transform: scale(1.01);
-    box-shadow: 5px 5px 7px black;
+    box-shadow: 5px 5px 7px #000;
     background-color: rgb(20,30,40);
 }
 
